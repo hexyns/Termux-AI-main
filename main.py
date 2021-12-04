@@ -13,22 +13,22 @@ print("\033[95m You said: ",str(inp))
 
 def system():
      if inp == "":
-         subprocess.call(["termux-tts-speak","please tell something hexyn"])
+         subprocess.call(["termux-tts-speak","please tell something sir"])
 
      elif "hello" in inp:
-         subprocess.call(["termux-tts-speak","hello hexyn "])
+         subprocess.call(["termux-tts-speak","hello sir "])
          
      elif "close" in inp:
-         subprocess.call(["termux-tts-speak","ok hexyn wait a minute"])
+         subprocess.call(["termux-tts-speak","ok sir wait a minute"])
          time.sleep(1)
          sys.exit()
      elif "how are you" in inp:
-        subprocess.call(["termux-tts-speak","i am good hexyn "])
+        subprocess.call(["termux-tts-speak","i am good sir "])
      elif "battery" in inp:
          subprocess.call(["termux-battery-status"])
          
      elif "sleep" in inp:
-         subprocess.call(["termux-tts-speak","ok hexyn i am going to sleep for 5 second"])
+         subprocess.call(["termux-tts-speak","ok sir i am going to sleep for 5 second"])
          time.sleep(5)
          
      elif "call me" in inp:
@@ -47,7 +47,7 @@ def system():
          os.system("termux-contact-list")
          
      elif "who are you" in inp:
-         subprocess.call(["termux-tts-speak","I am your virtual assistanct Termux, hexyn"])
+         subprocess.call(["termux-tts-speak","I am your virtual assistanct Termux, sir"])
          
      elif "time" in inp:
          subprocess.call(["termux-tts-speak",t])
